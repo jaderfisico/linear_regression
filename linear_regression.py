@@ -12,6 +12,8 @@ sigma = np.loadtxt(name_file, usecols=(7,))
 MBH = np.log10(mbh)
 SIGMA = np.log10(sigma/200)
 
+#Here we import the uncertainties in in both variables: MBH and SIGMA 
+
 plt.scatter(SIGMA, MBH)
 plt.show()
 
