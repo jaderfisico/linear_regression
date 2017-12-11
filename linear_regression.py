@@ -34,4 +34,3 @@ y = pymc.Normal('output',mu=linear_regress, value=MBH, observed=True)
 model = pymc.Model([x, y, alpha, beta])
 mcmc = pymc.MCMC(model)
 mcmc.sample(iter=10000,burn=1000, thin=10)
-
